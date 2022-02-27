@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family:Outfit;
+}
+
+:root{
+    --softBlue:hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%);
+    --darkBlue1: hsl(217, 54%, 11%);
+    --darkBlue2: hsl(216, 50%, 16%);
+    --darkBlue3: hsl(215, 32%, 27%);
+    --white:hsl(0, 0%, 100%);
+}
+
+.softBlue{
+    color:var(--softBlue) ;
+}
+
+
+.mr-5{margin-right: 5px;}
+.p-25x{padding: 25px;}
+
+.container-center{
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    width: 350px;
+    height: 596px;
+    background-color: var(--darkBlue2);
+    border-radius: 15px;
+}
+
+.container-img{
+    height: 302px;
+    width: 302;
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.img{
+    width: 302px;
+    height: 302px;
+    border-radius: 8px;
+    z-index: 1;
+    position: absolute;
+}
+
+.container-img .filter{
+    visibility: hidden;
+}
+
+.container-img:hover .filter{
+    width: 302px;
+    height: 302px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    visibility: visible;
+    background-color: hsla(178, 100%, 50%, 0.364);
+    border-radius: 8px;
+}
+
+
+.title{
+    color: var(--white);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.title:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.description{
+    font-size: 18px;
+    color: var(--softBlue);
+
+}
+
+.values{
+    display: flex;
+    flex-direction: row;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    color: var(--cyan);
+    font-weight: 600;
+    width: 50%;
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    color: var(--softBlue);
+    width: 50%;
+ 
+}
+
+hr{
+    margin: 25px 0 15px 0;
+    border: 1px solid var(--darkBlue3);
+}
+
+.autor{
+    display: flex;
+    flex-direction: row;
+    align-items : center;
+}
+
+.img-autor{
+    margin-right: 15px;
+    width: 33px;
+    height: 33px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+}
+
+.autorValue{
+    margin-left: 5px;
+    color: var(--white);
+    cursor: pointer;
+}
+.autorValue:hover{
+    color: var(--cyan);
+}
