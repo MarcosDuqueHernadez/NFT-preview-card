@@ -21,7 +21,7 @@ body{
 .mr-5{margin-right: 5px;}
 .p-25x{padding: 25px;}
 
-.container-center{
+main{
     height: 98vh;
     display: flex;
     justify-content: center;
@@ -74,6 +74,7 @@ body{
     color: var(--white);
     font-weight: 600;
     font-size: 22px;
+    margin-top: 0;
 }
 
 .title:hover{
@@ -112,6 +113,7 @@ hr{
 }
 
 .autor{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items : center;
