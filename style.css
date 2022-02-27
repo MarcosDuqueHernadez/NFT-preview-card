@@ -89,7 +89,7 @@ body{
 
 .values{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
 
 .price{
@@ -97,15 +97,12 @@ body{
     flex-direction: row;
     color: var(--cyan);
     font-weight: 600;
-    width: 50%;
 }
 
 .time{
     display: flex;
     flex-direction: row;
-    justify-content: end;
     color: var(--softBlue);
-    width: 50%;
  
 }
 
